@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Machine</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Friend Voting Machine</h1>
+        
+        <div class="section">
+            <h2>Add a Friend</h2>
+            <input type="text" id="friendName" placeholder="Enter friend's name">
+            <button onclick="addFriend()">Add Friend</button>
+        </div>
+
+        <div class="section">
+            <h2>Vote for a Friend</h2>
+            <select id="voteSelect">
+                <option value="">Select a friend</option>
+            </select>
+            <button onclick="castVote()">Vote</button>
+        </div>
+
+        <div class="section">
+            <h2>Results</h2>
+            <ul id="resultsList"></ul>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
